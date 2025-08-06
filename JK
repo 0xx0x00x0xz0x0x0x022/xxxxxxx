@@ -69,13 +69,15 @@ local function getRequestFunction()
 end
 
 local function verifyKey(key)
-    local apiKey = "GGPGx785Q"
+    local apiKey = "FawcstRE6"
+    local serviceId = "ukxI2vvqwOtUD0w2qm6Q"
     local hwid = getHWID()
     local url = "https://scriptsbinsauth.vercel.app/api/verify-key"
     local HttpService = game:GetService("HttpService")
     local body = {
         key = key,
-        hwid = hwid
+        hwid = hwid,
+        serviceId = serviceId
     }
     local requestFunc = getRequestFunction()
     if not requestFunc then
@@ -156,7 +158,7 @@ VerifyButton.MouseButton1Click:Connect(function()
     wait(2)
     if _G.ScriptsBinsAuth_VerificationStatus and _G.ScriptsBinsAuth_VerificationStatus.valid then
         ScreenGui:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/0xx0x00x0xz0x0x0x022/xxxxxxx/refs/heads/main/MPvP"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/0xx0x00x0xz0x0x0x022/xxxxxxx/refs/heads/main/JK"))()
         VerifyButton.Text = "Verify Key"
     else
         StatusLabel.Text = "Verification Failed (Internal Error)."
