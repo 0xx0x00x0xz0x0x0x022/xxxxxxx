@@ -158,7 +158,7 @@ VerifyButton.MouseButton1Click:Connect(function()
     wait(2)
     if _G.ScriptsBinsAuth_VerificationStatus and _G.ScriptsBinsAuth_VerificationStatus.valid then
         ScreenGui:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/0xx0x00x0xz0x0x0x022/xxxxxxx/refs/heads/main/JK"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/0xx0x00x0xz0x0x0x022/xxxxxxx/refs/heads/main/MPvP"))()
         VerifyButton.Text = "Verify Key"
     else
         StatusLabel.Text = "Verification Failed (Internal Error)."
